@@ -10,6 +10,9 @@ LINKEDIN_SEARCH_URL = "https://www.linkedin.com/search/results/companies/?compan
 LINKEDIN_EMAIL = 'LINKEDIN_EMAIL'
 LINKEDIN_PASSWORD = 'LINKEDIN_PASSWORD'
 
+# Make sure to update search term in array format. => ["Search anything inside braces."]
+SEARCH_TERMS =  ["staffing recruiting", "recruting agencies"]
+
 def create_driver():
     return webdriver.Firefox()
 
@@ -79,8 +82,8 @@ if __name__ == "__main__":
 
 
     # Search Term
-    search_terms = ["staffing recruiting", "recruting agencies"]
-    for search_term in search_terms:
+    
+    for search_term in SEARCH_TERMS:
         scrape_linkedin_companies(search_term, driver=driver, writer=writer)
 
     # Close File at the end.
