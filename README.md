@@ -43,4 +43,4 @@ python main.py
 Now it will open the browser and start scrapping.
 
 ### VIDEO EXAMPLE 
-![Watch the video](./resource/sample-video.webm)
+[![Watch the video](./resource/sample-video.mp4)](./resource/sample-video.mp4)
